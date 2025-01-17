@@ -17,7 +17,7 @@ async def schedule_meeting(request: MeetingRequest):
     start_time_str = meeting_details.get("start_time")
     end_time_str = meeting_details.get("end_time")
 
-    try:
+    try: 
         if start_time_str and end_time_str:
             start_time = datetime.datetime.fromisoformat(start_time_str)
             end_time = datetime.datetime.fromisoformat(end_time_str)
